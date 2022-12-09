@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE PAGE</title>
+    <style>
+        body{
+            background-color: rgb(189, 245, 226);
+            text-align: center;
+        }
+        h1{
+            color:blueviolet;
+            text-align: center;
+        }
+        table{
+            width:30%;
+            background-color: whitesmoke;
+        }
+        th {
+            height: 40px;
+            font-size: 24px;
+            background-color: bisque;
+        }
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <%- include('nav') -%>
+    <h1>YOUR PROFILE</h1>
+    <table border="2" align="center">
+        <!-- <tr>
+            <th>ID</th>
+            <td></td>
+        </tr> -->
+        <tr>
+            <th>USERNAME</th>
+            <td>Ashima</td>
+        </tr>
+        <tr>
+            <th>FATHER NAME</th>
+            <td>Atma Ram</td>
+        </tr>
+        <tr>
+            <th>GENDER</th>
+            <td>Female</td>
+        </tr>
+        <tr>
+            <th>PHONE NUMBER</th>
+            <td>2147483647</td>
+        </tr>
+    </table>
+    <!-- <table border="2">
+        <%
+        for(var i=0;i<result.length;i++)
+        { %>
+        <tr>
+            <td>NAME</td>
+            <td><%= result[i].name %></td>
+        </tr>
+        <tr>
+            <td>FATHER NAME</td>
+            <td><%= result[i].fname %></td>
+        </tr>
+        <tr>
+            <td>GENDER</td>
+            <td><%= result[i].gender %></td>
+        </tr>
+        <tr>
+            <td>PHONE NUMBER</td>
+            <td><%= result[i].phno %></td>
+        </tr>
+        <%}
+        %>
+    </table> -->
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGN UP PAGE</title>
+    <style>
+        body{
+            background-color: rgb(189, 245, 226);
+            /* text-align: center; */
+            /* background-image:url('background.jpg') ; */
+        }
+        h1{
+            color:blueviolet;
+            text-align: center;
+        }
+        label{
+            font-size: 25px;
+        }
+        input{
+            width:300px;
+            height:40px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+        }
+        #s1{
+            background-color: rgb(73, 70, 119);
+            color: aliceblue;
+            margin-left: 100px;
+        }
+        #sign{
+            border: 2px black solid;
+            width: 600px;
+            margin-left: 380px;
+            padding-left: 40px;
+            background-color: rgb(216, 214, 214);
+        }
+    </style>
+</head>
+<body>
+    <h1>SIGN UP</h1>
+    <div id="sign">
+   <form action="\save" method="post">
+    <label> USERNAME</label>
+    <input type="text" name="name" placeholder="Enter Name"><br>
+    <label> FATHER NAME</label>
+    <input type="text" name="fname" placeholder="Enter Father Name"><br>
+    <label> PASSWORD</label>
+    <input type="password" name="pwd" placeholder="Enter Password"><br>
+    <label> GENDER</label>
+    <input type="text" name="gender" placeholder="Enter Gender"><br>
+    <label> PHONE NUMBER</label>
+    <input type="text" name="phno" placeholder="Enter Phone Number" maxlength="10" minlength="10"><br>
+   
+    <input id="s1" type="submit">
+    
+   </form> 
+</div>
+</body>
+</html>

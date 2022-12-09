@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PANEL</title>
+    <style>
+        body{
+            background-color: rgb(189, 245, 226);
+            text-align: center;
+        }
+        h1{
+            color:blueviolet;
+            text-align: center;
+        }
+        table{
+            width:100%;
+            background-color: whitesmoke;
+        }
+        th {
+            height: 50px;
+            font-size: 24px;
+            background-color: bisque;
+        }
+        td {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>ADMIN PANEL</h1>
+    <table border="2" align="center">
+        <tr>
+            <th>USERNAME</th>
+            <th>FATHER NAME</th>
+            <th>PASSWORD</th>
+            <th>GENDER</th>
+            <th>PHONE NUMBER</th>
+            <!-- <th>Delete</th>
+            <th>Update</th> -->
+            
+        </tr>
+        <%
+        for(var i=0;i<result.length;i++)
+        { %>
+     <tr>
+        <td><%= result[i].name %></td>
+        <td><%= result[i].fname %></td>
+        <td><%= result[i].pwd %></td>
+        <td><%= result[i].gender %></td>
+        <td><%= result[i].phno %></td>
+        <!-- <td><a href="/delete?id=<%= result[i].id %>">Delete</a></td>
+        <td><a href="/update?id=<%= result[i].id %>">Update</a></td> -->
+            
+    </tr>
+        <%}
+        %>
+    </table>
+    
+</body>
+</html>
